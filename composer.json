@@ -12,7 +12,7 @@
       "src/Hackathon/VisualEditor/registration.php"
     ],
     "psr-4": {
-      "Hackathon\\OrderItemComments\\": "src/Hackathon/OrderItemComments/"
+      "Hackathon\\VisualEditor\\": "src/Hackathon/VisualEditor/"
     }
   }
 }
