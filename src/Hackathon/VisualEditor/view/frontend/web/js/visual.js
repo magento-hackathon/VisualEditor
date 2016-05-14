@@ -1,1 +1,1 @@
-require(['visualEditor']);
+require(['Hackathon_VisualEditor/js/visualeditor']);
