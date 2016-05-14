@@ -1,1 +1,1 @@
-require(['visualEditor']);
+require(['visualeditor']);
