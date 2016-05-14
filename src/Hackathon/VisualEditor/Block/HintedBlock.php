@@ -16,9 +16,12 @@ class HintedBlock extends \Magento\Cms\Block\Block
             if ($block->isActive()) {
                 $content = $this->_filterProvider->getBlockFilter()->setStoreId($storeId)->filter($block->getContent());
 
+                $frontendIdentifier = md5($this->getBlockId() . $content);
+
                 $html = '<div class="visualeditor_block_container">
-                            <span class="visualeditor_block_identifier">' . $this->getBlockId() . ' / ' . $block->getTitle() . '</span>
-                            ' . $content . '
+                            <span class="visualeditor_block_identifier">' . $this->getBlockId() . ' / ' . $block->getTitle() . ' | <a href="#">Edit</a> | <a href="#">Delete</a></span>
+                            <span class="visualeditor_content" data-content-identifier="' . $frontendIdentifier .'">' . $content . '</span>
+                            <textarea class="visualeditor_textarea" data-textarea-identifier="' . $frontendIdentifier .'">' . $content .'</textarea>
                         </div>';
             }
         }

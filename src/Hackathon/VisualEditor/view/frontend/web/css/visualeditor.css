@@ -1,5 +1,6 @@
 .visualeditor_block_container.enabled {
     border:1px red dotted;
+    padding: 10px;
 }
 
 .visualeditor_block_identifier {
@@ -7,6 +8,18 @@
     float: right;
     font-size: 10px;
     padding:2px;
+}
+
+.visualeditor_content.disabled {
+    display:none;
+}
+
+.visualeditor_textarea {
+    display:none;
+}
+
+.visualeditor_textarea.enabled {
+    display:block;
 }
 
 .visualeditor_block_identifier.enabled {
