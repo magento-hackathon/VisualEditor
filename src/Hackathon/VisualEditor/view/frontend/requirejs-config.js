@@ -1,7 +1,7 @@
 var config = {
     map: {
         '*': {
-            visualEditor: 'Hackathon_VisualEditor/js/visualeditor'
+            visualeditor: 'Hackathon_VisualEditor/js/visualeditor'
         }
     }
 };
