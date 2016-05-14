@@ -1,0 +1,14 @@
+.visualeditor_block_container.enabled {
+    border:1px red dotted;
+}
+
+.visualeditor_block_identifier {
+    display:none;
+    float: right;
+    font-size: 10px;
+    padding:2px;
+}
+
+.visualeditor_block_identifier.enabled {
+    display:block;
+}
